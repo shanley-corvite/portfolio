@@ -28,10 +28,8 @@ nav a:hover, nav a:focus {
 
 nav {
     background-color: #edece9; 
-    border-bottom: 1px solid #f5f5f5;
-    color: #381d2a;
+    color: black;
     width: 100%; 
-    box-shadow: 0 2px 2px -2px rgba(245,245,245,0.5);
     align-items: center;
 }
 
@@ -44,6 +42,43 @@ nav {
 
 .nav_links #current-page {
     border-bottom: 3px solid black;
+}
+
+h1{
+  font-size: 50px;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+h2{
+  font-size: 28px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+h3{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  text-align:center;
+}
+
+p{
+  font-family: 'Poppins', sans-serif;
+  padding-left: 120px;
+  padding-right: 120px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+img{
+  max-width: 300px;
+  max-height: 300px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
 }
 
 /*----------WORK.HTML----------*/
@@ -67,95 +102,96 @@ nav {
 .introphrase {
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    padding: 40px 90px;
+    padding: 160px 0px 40px 0px;
 }
 
 .workbox {
-    grid-row: 2;
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     padding-bottom: 70px;
-    max-width: 500px; 
-    text-align: center;
+    max-width: 700px; 
     margin: auto;
 }
 
-.researchbox .hsroboticsbox .designbox .classprojectsbox{
-    padding: 30px;
-    justify-self: center;
-    align-self: center;
-    margin: 10px;
-    border: 3px solid gray;
-    text-align: center;
-}
-/*
-.researchbox .hsroboticsbox .designbox .classprojectsbox{   
-    background-color: transparent;
-    width: 300px;
-    height: 300px;
-    perspective: 1000px;
-  }
-  
-  .flip-card-inner {
+.researchbox, .hsroboticsbox, .designsbox, .classprojectsbox {
     position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
-  
-  .researchbox:hover .flip-card-inner, .hsroboticsbox:hover .flip-card-inner, .designbox .flip-card-inner, .classprojectsbox .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    vertical-align: center;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  
-  .flip-card-front {
-    background-color: #edece9;
-    color: black;
-    overflow: hidden;
-  }
-  
-  .flip-card-back {
-    background-color: #edece9;
-    color: rgb(26, 26, 26);
-    transform: rotateY(180deg);
-    font-family: 'Montserrat', serif;
-    vertical-align: center;
-  }
-  */
+    width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.researchbox:hover .overlay{
+  opacity: 1;
+}
+
+.hsroboticsbox .overlay{
+  opacity: 1;
+}
+
+.designsbox .overlay{
+  opacity: 1;
+}
+
+.classprojectsbox .overlay{
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+
+}
+
 
 /*----------RESEARCH.HTML----------*/
 
-.researchcontainer{
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr auto auto auto auto;
-  padding-bottom: 20px;
+.researchintro, .ltst, .i3{
+  padding: 20px;
 }
 
 .ltst{
-  grid-column:1 / span 3;
-  grid-row: 1;
+  position:relative;
+  text-align:center;
 }
 
-.i3{
-  grid-column: 1 / span3;
-  grid-row: 2;
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-
 
 /*----------HSROBOTICS.HTML----------*/
+.hsroboticsintro, .competitions, .documentations{
+  padding: 20px;
+}
+
 /*----------DESIGN.HTML----------*/
 /*----------CLASSPROJECTS.HTML----------*/
 /*----------CONTACT.HTML----------*/
