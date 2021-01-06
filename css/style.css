@@ -105,6 +105,7 @@ img{
     padding: 160px 0px 40px 0px;
 }
 
+/* puts boxes in 2x2 */
 .workbox {
     display: flex;
     flex-wrap: wrap;
@@ -114,9 +115,10 @@ img{
     margin: auto;
 }
 
+
 .researchbox, .hsroboticsbox, .designsbox, .classprojectsbox {
-    position: relative;
-    width: 50%;
+  position: relative;
+  width: 50%;
 }
 
 .image {
@@ -135,22 +137,10 @@ img{
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #008CBA;
+  background-color: gray;
 }
 
-.researchbox:hover .overlay{
-  opacity: 1;
-}
-
-.hsroboticsbox .overlay{
-  opacity: 1;
-}
-
-.designsbox .overlay{
-  opacity: 1;
-}
-
-.classprojectsbox .overlay{
+.researchbox:hover .overlay, .hsroboticsbox .overlay, .designsbox .overlay, .classprojectsbox .overlay{
   opacity: 1;
 }
 
@@ -166,7 +156,6 @@ img{
   text-align: center;
   font-family: 'Poppins', sans-serif;
 }
-
 
 /*----------RESEARCH.HTML----------*/
 
