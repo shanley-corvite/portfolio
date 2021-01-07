@@ -1,47 +1,47 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    color: #402a20;
-    font-size: 16px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #f9f9f9; 
+  color: #402a20;
+  font-size: 16px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #f9f9f9; 
 }
 
 nav li {
-    font-family: 'Raleway', sans-serif; 
-    text-align: center;
-    padding: 10px;
+  font-family: 'Raleway', sans-serif; 
+  text-align: center;
+  padding: 10px;
 }
 
 nav a {
-    color: #381d2a;
-    text-decoration: none; 
-    text-transform: lowercase;
+  color: #381d2a;
+  text-decoration: none; 
+  text-transform: lowercase;
 }
 
 nav a:hover, nav a:focus {
-    border-bottom: 3px solid black;
+  border-bottom: 3px solid #402a20;
 }
 
 nav {
-    background-color: #edece9; 
-    color: black;
-    width: 100%; 
-    align-items: center;
+  background-color: #edece9; 
+  color: #402a20;
+  width: 100%; 
+  align-items: center;
 }
 
 .nav_links{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 
 .nav_links #current-page {
-    border-bottom: 3px solid black;
+  border-bottom: 3px solid #402a20;
 }
 
 h1{
@@ -70,51 +70,75 @@ p, li{
   padding-right: 120px;
   line-height: 1.6;
   font-size: 15px;
+  text-align: center;
 }
 
 img{
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 400px;
+  max-height: 400px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a{
+    color: rgb(38, 122, 179);
+  }
+
+.navigation a{
+  text-decoration: none;
+  font-size: 20px;
+  color: #402a20;
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.next{
+  float:right;
+}
+.previous{
+  float:left;
+}
+
+.navigation a:hover{
+  background-color: #402a20;
+  color: white;
 }
 
 /*----------WORK.HTML----------*/
 
 .intro {
     display: flex;
+    align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content:center;
+    justify-content: center;
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-.intro img {
-    max-height: 500px;
-    min-height: 200px;
-    max-width: 400px;
-    min-width: 100px;
-    padding-bottom: 40px;
-}
-
-.introphrase {
+.introphrase p{
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    padding: 160px 0px 40px 0px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 /* puts boxes in 2x2 */
 .workbox {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding-bottom: 70px;
+    justify-content: space-around;
+    padding-bottom: 10px;
     max-width: 700px; 
     margin: auto;
 }
-
 
 .researchbox, .hsroboticsbox, .designsbox, .classprojectsbox {
   position: relative;
@@ -128,19 +152,19 @@ img{
 }
 
 .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
+  position:absolute;
+  top: 20px;
+  bottom: 20px;
+  left: 20px;
+  right: 0px;
+  height: auto;
   width: 100%;
   opacity: 0;
   transition: .5s ease;
   background-color: gray;
 }
 
-.researchbox:hover .overlay, .hsroboticsbox .overlay, .designsbox .overlay, .classprojectsbox .overlay{
+.researchbox:hover .overlay, .hsroboticsbox:hover .overlay, .designsbox:hover .overlay, .classprojectsbox:hover .overlay{
   opacity: 1;
 }
 
@@ -156,6 +180,7 @@ img{
   text-align: center;
   font-family: 'Poppins', sans-serif;
 }
+
 
 /*----------RESEARCH.HTML----------*/
 
@@ -178,6 +203,12 @@ img{
 /*----------HSROBOTICS.HTML----------*/
 .hsroboticsintro, .competitions, .documentations{
   padding: 20px;
+}
+
+.competitions li{
+  display: flex;
+  flex: wrap;
+  text-align: left;
 }
 
 /*----------DESIGN.HTML----------*/
