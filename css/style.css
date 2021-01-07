@@ -108,7 +108,7 @@ a{
 
 .navigation a:hover{
   background-color: #402a20;
-  color: #402a20;
+  color: #f9f9f9;
 }
 
 /*----------WORK.HTML----------*/
@@ -211,7 +211,26 @@ a{
 .competitions li{
   display: flex;
   flex: wrap;
-  text-align: left;
+  justify-content: center;
+}
+
+.competitions img{
+  max-width: 700px;
+}
+
+.set1, .set2 {
+  display: flex;
+  flex-direction: row;
+  flex: wrap;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.doc1p, .doc2p{
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding-top: 100px;
 }
 
 /*----------DESIGN.HTML----------*/
