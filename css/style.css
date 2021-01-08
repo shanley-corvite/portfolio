@@ -13,7 +13,8 @@ body {
 nav li {
   font-family: 'Raleway', sans-serif; 
   text-align: center;
-  padding: 10px;
+  padding: 15px;
+
 }
 
 nav a {
@@ -31,6 +32,7 @@ nav {
   color: #402a20;
   width: 100%; 
   align-items: center;
+  padding: 0px;
 }
 
 .nav_links{
@@ -66,11 +68,11 @@ h3{
 
 p, li{
   font-family: 'Poppins', sans-serif;
-  padding-left: 120px;
-  padding-right: 120px;
   line-height: 1.6;
   font-size: 15px;
   text-align: center;
+  padding-left: 100px; /* change for each media screen */
+  padding-right: 100px; /* change for each media screen */
 }
 
 img{
@@ -183,12 +185,7 @@ a{
 
 /*----------RESEARCH.HTML----------*/
 
-.researchintro, .ltst, .i3{
-  padding: 20px;
-}
-
 .ltst{
-  position:relative;
   text-align:center;
 }
 
