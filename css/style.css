@@ -189,7 +189,7 @@ a{
 }
 
 .text {
-  color: black;
+  color: #402a20;
   font-size: 20px;
   position: absolute;
   top: 50%;
@@ -207,10 +207,9 @@ a{
 .researchcontainer img{
   max-width: 800px;
   max-height: 800px;
-}
-
-.research-image{
-  opacity: 0.5;
+  padding-bottom:0px;
+  padding-top:0px;
+  opacity: 0.25;
   display: block;
   width: 100%;
   height: auto;
@@ -242,40 +241,25 @@ a{
   opacity: 0;
 }
 
-/*
-.text {
-  color: black;
-  font-size: 30px;
-  position: relative;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-}
-*/
-
 .research-text {
-  color: black;
+  color: #402a20;
   font-size: 30px;
-  padding: 16px 32px;
   font-family: 'Poppins', sans-serif;
+  max-width: 100%;
 }
 
 .researchintro{
   max-width: 1500px; 
-  margin: auto;
 }
 
 .researchcontainer {
   display: grid;
   grid-template-columns: auto;
   background-color: #f9f9f9;
-  padding: 5px;
   justify-content: space-evenly;
   justify-items: center;
   align-items: center;
-  max-width: 850px; 
+  max-width: 900px; 
   margin: auto;
 }
 
@@ -348,6 +332,5 @@ a{
   text-align: center;
   padding: 20px 0px;
 }
-
 
 /*----------CONTACT.HTML----------*/
