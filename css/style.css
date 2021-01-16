@@ -75,6 +75,10 @@ p, li{
   padding-right: 100px; /* change for each media screen */
 }
 
+ul{
+  list-style-type: none;
+}
+
 img{
   max-width: 400px;
   max-height: 400px;
@@ -131,16 +135,6 @@ a{
     padding-left: 0px;
     padding-right: 0px;
 }
-
-/* puts boxes in 2x2 
-.workbox {
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 10px;
-    max-width: 700px; 
-    margin: auto;
-}
-*/
 
 .researchbox, .hsroboticsbox, .designsbox, .classprojectsbox {
   position:relative;
@@ -270,6 +264,8 @@ a{
 }
 
 /*----------HSROBOTICS.HTML----------*/
+
+/*
 .hsroboticsintro, .competitions, .documentations{
   padding: 20px;
 }
@@ -284,23 +280,6 @@ a{
   max-width: 700px;
 }
 
-/*
-.set1, .set2 {
-  display: flex;
-  flex-direction: row;
-  flex: wrap;
-  justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.doc1p, .doc2p{
-  font-family: 'Poppins', sans-serif;
-  text-align: center;
-  padding-top: 100px;
-}
-*/
-
 .documentationscontainer {
   display: grid;
   grid-template-columns: auto auto;
@@ -313,6 +292,100 @@ a{
 .documentationscontainer > div  {
   text-align: center;
   padding: 20px 0px;
+}
+
+*/
+
+.roboticsintro, .seaperch-image, .MATE-image{
+  padding: 20px;
+}
+
+.documentationsintro{
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.roboticscontainer img{
+  max-width: 800px;
+  max-height: 800px;
+  padding-bottom:0px;
+  padding-top:0px;
+  opacity: 0.25;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.seaperch-image, .MATE-image{
+  position: relative;
+  overflow: hidden;
+}
+
+.competition-overlay {
+  transition: .5s ease;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.seaperch-image:hover .competition-image, .MATE-image:hover .competition-image{
+  opacity: 1;
+}
+
+.seaperch-image:hover .competition-overlay, .MATE-image:hover .competition-overlay{
+  opacity: 0;
+}
+
+.competition-text {
+  color: #402a20;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  max-width: 100%;
+}
+
+.roboticsintro{
+  max-width: 1500px; 
+}
+
+.roboticscontainer {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #f9f9f9;
+  padding: 5px;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items: center;
+  max-width: 900px; 
+  margin: auto;
+  grid-gap: 20px;
+}
+
+.researchcontainer > div  {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.roboticsintro, .seaperch-image, .seaperch-description, .MATE-image, .MATE-description, .documentationsintro{
+  grid-column:1/end;
+}
+
+.doc1p, .doc2p, .doc3p{
+  grid-column:1/2;
+}
+
+.doc1i, .doc2i, .doc3i{
+  grid-column: 2/3;
+}
+
+.doc1i img, .doc2i img, .doc3i img{
+  opacity: 1;
 }
 
 /*----------DESIGN.HTML----------*/
