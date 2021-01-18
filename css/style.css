@@ -144,7 +144,7 @@ a{
 
 .homecontainer {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: auto auto auto;
   background-color:#f9f9f9;
   padding: 20px;
   justify-content: space-evenly;
@@ -265,37 +265,6 @@ a{
 
 /*----------HSROBOTICS.HTML----------*/
 
-/*
-.hsroboticsintro, .competitions, .documentations{
-  padding: 20px;
-}
-
-.competitions li{
-  display: flex;
-  flex: wrap;
-  justify-content: center;
-}
-
-.competitions img{
-  max-width: 700px;
-}
-
-.documentationscontainer {
-  display: grid;
-  grid-template-columns: auto auto;
-  padding: 5px;
-  justify-content: space-evenly;
-  justify-items: center;
-  align-items: center;
-}
-
-.documentationscontainer > div  {
-  text-align: center;
-  padding: 20px 0px;
-}
-
-*/
-
 .roboticsintro, .seaperch-image, .MATE-image{
   padding: 20px;
 }
@@ -389,23 +358,6 @@ a{
 }
 
 /*----------PROJECTS.HTML----------*/
-/*.projectscontainer {
-  display: grid;
-  grid-template-columns: auto auto;
-  background-color: #2196F3;
-  padding: 5px;
-  justify-content: space-evenly;
-  justify-items: center;
-  align-items: center;
-}
-
-.projectscontainer > div  {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0px;
-}
-*/
-
 .projectscontainer {
   display: grid;
   grid-template-columns: auto auto;
@@ -426,15 +378,49 @@ a{
 }
 
 .projectsintro{
-  grid-column:1/end;
+  grid-column: 1/end;
 }
 
-.p1i, .p2i, .p3i, .p4i{
+.project1, .project2, .project3, .project4, .project5, .project6{
+  grid-column: 1/2;
+}
+
+.p1i, .p2i, .p3i, .p4i, .p5i, .p6i{
   grid-column: 2/3;
+  position: relative;
+  overflow: hidden;
+}
+.project-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #f9f9f9;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-.project1, .project2, .project3, .project4{
-  grid-column:1/2;
+.p1i:hover .project-image, .p3i:hover .project-image, .p4i:hover .project-image, .p5i:hover .project-image, .p6i:hover .project-image{
+  opacity: 1;
+}
+
+.p1i:hover .project-overlay, .p3i:hover .project-overlay, .p4i:hover .project-overlay, .p5i:hover .project-overlay, .p6i:hover .project-overlay{
+  opacity: 1;
+}
+
+.project-text {
+  color: #402a20;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
 
 /*----------CONTACT.HTML----------*/
