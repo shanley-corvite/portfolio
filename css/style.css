@@ -136,7 +136,7 @@ a{
     padding-right: 0px;
 }
 
-.researchbox, .hsroboticsbox, .designsbox, .classprojectsbox {
+.researchbox, .hsroboticsbox, .projectsbox {
   position:relative;
   width: 75%;
   padding-bottom: 45px;
@@ -144,7 +144,7 @@ a{
 
 .homecontainer {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto;
   background-color:#f9f9f9;
   padding: 20px;
   justify-content: space-evenly;
@@ -178,7 +178,7 @@ a{
   background-color: #f9f9f9;
 }
 
-.researchbox:hover .overlay, .hsroboticsbox:hover .overlay, .designsbox:hover .overlay, .classprojectsbox:hover .overlay{
+.researchbox:hover .overlay, .hsroboticsbox:hover .overlay, .projectsbox:hover .overlay{
   opacity: 1;
 }
 
@@ -203,7 +203,7 @@ a{
   max-height: 800px;
   padding-bottom:0px;
   padding-top:0px;
-  opacity: 0.25;
+  opacity: 0.45;
   display: block;
   width: 100%;
   height: auto;
@@ -388,9 +388,8 @@ a{
   opacity: 1;
 }
 
-/*----------DESIGN.HTML----------*/
-/*----------CLASSPROJECTS.HTML----------*/
-.classprojectscontainer {
+/*----------PROJECTS.HTML----------*/
+/*.projectscontainer {
   display: grid;
   grid-template-columns: auto auto;
   background-color: #2196F3;
@@ -400,10 +399,42 @@ a{
   align-items: center;
 }
 
-.classprojectscontainer > div  {
+.projectscontainer > div  {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 20px 0px;
+}
+*/
+
+.projectscontainer {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #f9f9f9;
+  padding: 5px;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items: center;
+  max-width: 900px; 
+  margin: auto;
+  grid-gap: 20px;
+}
+
+.projectscontainer > div  {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.projectsintro{
+  grid-column:1/end;
+}
+
+.p1i, .p2i, .p3i, .p4i{
+  grid-column: 2/3;
+}
+
+.project1, .project2, .project3, .project4{
+  grid-column:1/2;
 }
 
 /*----------CONTACT.HTML----------*/
