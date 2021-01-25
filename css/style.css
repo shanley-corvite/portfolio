@@ -491,8 +491,8 @@ a{
   background-repeat: no-repeat;
   opacity: .75;
 }
-.outro-text{
-  position: absolute;
-  top: 50%;
-  left: 25%;
+.outro-text p, .outro-text h1{
+  position:absolute;
+  text-align: center;
+  top: 50%;                        
 }
